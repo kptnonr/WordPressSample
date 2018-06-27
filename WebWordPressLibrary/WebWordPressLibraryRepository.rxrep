@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="b68c5ae7-5d54-49e3-893c-ecd04dbce34b"
+name="WebWordPressLibraryRepository"
+rxversion="8.1">
+	<codegen
+	classname="WebWordPressLibraryRepository"
+	namespace="WebWordPressLibrary">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="5251cef1-231f-4e1a-b0bd-41e54b4b13f8"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="1155ad1c-67f9-47e2-b216-3b27bda1db0b"
+		isrooted="True"
+		name="WordPress_Demo"
+		refimgid="d836b273-8743-4bf9-a6ff-0faed06421a2"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="unknown,webelement,formtag"
+			capname="form"
+			id="3f312045-ef8c-48be-bc45-f4ee5cc2b3a2"
+			isrooted="True"
+			name="Loginform"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="73564b76-2882-43c3-b20b-ae17d266067d"
+				name="UserLogin"
+				refimgid="c1f1aa0f-7aff-4ba5-b082-05a81b40ae66"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_login']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9ba00e0e-2cec-4c4c-be2d-ee6ce280d0a5"
+				name="UserPass"
+				refimgid="822a3702-c25f-4857-ac7e-95845f0a1883"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_pass']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4f9f5619-5b52-4764-9765-e16693137316"
+				name="WpSubmit"
+				refimgid="1b88899b-1739-49d5-b1a5-90d07c57f470"
+				searchtimeout="30000ms">
+					/dom[@domain='webtest.ranorex.org']//form[#'loginform']/?/?/input[@id='wp-submit']
+				</item>
+				<basepath>
+					/dom[@domain='webtest.ranorex.org']//form[#'loginform']
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="litag"
+			id="b7d60911-7c2c-4958-baf7-534def07cbb1"
+			name="Posts"
+			refimgid="1d9476ea-0488-41c3-b43e-08785e3c0b0a"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="e255ffb3-e703-4ab6-a36e-c2ed602282a5"
+			name="AddNew"
+			refimgid="957a3e16-8870-49c4-a4bb-5aa5d15ca667"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='Add New']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="44201c90-e37b-4ed1-a21a-8fd6e663c06d"
+			name="AllPosts"
+			refimgid="dbb8d120-a71b-4eb9-8283-4fde63104ea6"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='All Posts']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="f43fe2b4-c640-4dc4-b194-44d82e79d736"
+			name="Title"
+			refimgid="75357dee-6455-4a25-b09a-af5c335e37a1"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[#'title']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="058f30ed-a7a9-42fe-8fc9-1fc0359efabf"
+			name="EditPost"
+			refimgid="0c86e752-de06-4479-91aa-8e5cfb5d8632"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-edit']/a[@innertext='Edit Post']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="3f002dd9-dc74-4383-a479-13564ad81715"
+			name="PostContent"
+			refimgid="d465b60f-22be-4d29-b1f4-087237eefeb4"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//div[@id&gt;'post-']/div[@class='entry']/p
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="1b88e9a6-3588-4e2f-a970-9a0c951cd799"
+			name="LogOut"
+			refimgid="40236b3d-b792-4299-a3ec-ee83db71117e"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="baf7acf6-9968-4f11-920f-c8a8ae26ceb1"
+			name="MoveToTrash"
+			refimgid="f2c868d7-a631-4cd7-8cc8-a8f6fad9269e"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//div[#'delete-action']/a[@innertext='Move to Trash']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="a75cd9f8-99bc-40c3-9ddc-8f2f3aaa705e"
+			name="SamplePermalink"
+			refimgid="0bb8e600-c098-4ab5-9ad2-64898290407b"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//span[#'sample-permalink']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="87655afb-b7fd-4c8f-a620-fb5852b80b45"
+			name="Publish"
+			refimgid="0ccd8cad-1da3-43b9-895a-4f477549be70"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//input[@id='publish' and @class!~'disabled']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="941d4a5d-4fc3-4bce-b0b7-f75c361aec56"
+			name="MyAccount1"
+			refimgid="ad816297-5eeb-46b5-b0b6-a33d782e1425"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-my-account']/a[@innertext='Howdy, Ranorex Webtest new']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="d33d1a10-1f16-498d-9ff5-54a4c542f24b"
+			name="Pagetitle"
+			refimgid="55523fbb-e443-45cb-88e1-30f7923819d0"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//h1[#'pagetitle']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="litag"
+			id="20d79271-5608-4b0b-9f91-e52976c473af"
+			name="Dashboard"
+			refimgid="15543514-1844-4e1b-bfcb-014308ea5ace"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'menu-dashboard']
+			</item>
+			<item
+			capname="atag"
+			id="bb18736e-7f5b-4b59-a50b-8ec22986e78b"
+			name="RecentPost"
+			refimgid="2702b014-83a9-40cb-bcb5-c70fc5226d02"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//li[#'recent-posts-2']//a[@href=$varPostURL]
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="204ae0f9-7b3c-4a6d-b273-d9006e35a5c2"
+			name="Content"
+			refimgid="b27177c1-0a1d-4f71-bed5-2c7be41ef627"
+			searchtimeout="30000ms">
+				/dom[@domain='webtest.ranorex.org']//textarea[@id='content']
+			</item>
+			<basepath>
+				/dom[@domain='webtest.ranorex.org']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		comment="Popup that asks for password-autocompletion (in older Versions of IE)"
+		id="ebf541e8-0e0c-46fd-9f2c-fa2381326c1c"
+		isrooted="True"
+		name="IE_Popup"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="855eb7db-d3f0-4d3d-af8f-f158a445d79e"
+			name="ButtonNo"
+			searchtimeout="30000ms">
+				/form[@processname='iexplore' and @accessiblerole='Dialog']/button[2]
+			</item>
+			<basepath>
+				/form[@processname='iexplore' and @accessiblerole='Dialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADDSURBVDhPjZELEoMwCERz9BzNm6XAsoRP67Qz
+r2rgLYku+Z1/eJ7nnLMGUpvNa2/gbWzesra3XsEMaKJO5WTIgP0aItcWkGSIV2YgB9WAX7LUbKrX
+Ag8ZAUNu9QJq+oc0yooXUSM28UsAzxmyNQqxksg7YYA+5q3HtDdsV9LrWUGRMeGdLOMbp4AI8fsy
+StD1vFTELMi9ff/oFOwI1oMlvsg+TcUhc0A+Al4eqSFFMlHx3hyg9OcqJfFypSyaPJsb63wA/PcZ
+Osx0dkIAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="29335f94-7125-4a66-b789-5db5390570d1"
+		name="varPostTitle">
+			Ranorex is awesome!
+		</var>
+		<var
+		id="38650ea2-a352-43df-89fe-6205bdabe5c4"
+		name="varPostURL">
+			http://webtest.ranorex.org/
+		</var>
+	</variables>
+</repository>

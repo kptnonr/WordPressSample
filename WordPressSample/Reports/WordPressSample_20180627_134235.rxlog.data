@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="11a8b8e00fee1884"
+		totalerrorcount="1"
+		totalwarningcount="3"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="onuru"
+		rxversion="8.1.2.0"
+		host="USTUNAYMSI"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="tr-TR"
+		dtnlanguage="en-US"
+		screenresolution="2732x768"
+		timestamp="6/27/2018 1:42:35 PM"
+		timestampiso="2018-06-27T10:42:35"
+		endtime="6/27/2018 1:42:59 PM"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="23.57s"
+			durationms="23568"
+			type="test-suite"
+			rid="272c68f1b12cb288"
+			totalerrorcount="1"
+			totalwarningcount="3"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="WordPressSample"
+			headertext="WordPressSample"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+				<param
+					name="Global_LoginURL">
+					http://webtest.ranorex.org/wp-admin/edit.php
+				</param>
+				<param
+					name="Global_Username">
+					ranorex webtest new
+				</param>
+				<param
+					name="Global_Password">
+					ranorex
+				</param>
+			</params>
+			<activity
+				result="Failed"
+				duration="23.55s"
+				durationms="23553"
+				type="test-case"
+				rid="11e612bef50f01ec"
+				totalerrorcount="1"
+				totalwarningcount="3"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="3"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="AddBlogPost"
+				testcontainerid="3cad3cc9-b1a3-4575-bca1-f1d629f157b5"
+				headertext="AddBlogPost"
+				displayName="AddBlogPost"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<params>
+					<param
+						name="Post-Header">
+						Ranorex is awesome!
+					</param>
+					<param
+						name="Post-Content">
+						This is a demo-post automated with Ranorex
+					</param>
+					<param
+						name="Post-Link">
+					</param>
+				</params>
+				<detail>
+					Test Case: Login to Wordpress, publish a post, validate 
+the post and delete it again afterwards
+				</detail>
+				<activity
+					result="Success"
+					duration="5.58s"
+					durationms="5575"
+					type="setup-container"
+					rid="131e1c09b2ae8d21"
+					totalerrorcount="0"
+					totalwarningcount="3"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="2"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="22ms"
+						durationms="22"
+						type="test-module"
+						rid="d001969f50691f6"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="StartWatchingPopup (WebWordPressLibrary)"
+						displayName="StartWatchingPopup (WebWordPressLibrary)"
+						moduleid="77069f78-66fa-41ee-9bc3-a658da488ad8"
+						moduletype="UserCode"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+					</activity>
+					<activity
+						result="Success"
+						duration="5.31s"
+						durationms="5312"
+						type="test-module"
+						rid="105f713a38c98b98"
+						totalerrorcount="0"
+						totalwarningcount="3"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="OpenBrowser (WebWordPressLibrary)"
+						displayName="OpenBrowser (WebWordPressLibrary)"
+						moduleid="1a79ad03-9369-4d42-8d3a-34a236d1ed1d"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+							<varbinding
+								name="varLoginURL"
+								value="http://webtest.ranorex.org/wp-admin/edit.php">
+							</varbinding>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.670"
+							timeRelativeToTestModuleStartTime="00:00.000"
+							timeWallClock="13:42:36"
+							time="00:00.670"
+							level="Info"
+							category="Data">
+							<message>
+								Current variable values:<br/>$varLoginURL = 'http://webtest.ranorex.org/wp-admin/edit.php'
+							</message>
+							<metainfo
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.717"
+							timeRelativeToTestModuleStartTime="00:00.046"
+							timeWallClock="13:42:36"
+							time="00:00.717"
+							level="Info"
+							category="Website">
+							<message>
+								Opening web site 'http://webtest.ranorex.org' with browser 'IE' in maximized mode.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\OpenBrowser.cs"
+								codeline="95"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:01.819"
+							timeRelativeToTestModuleStartTime="00:01.149"
+							timeWallClock="13:42:37"
+							time="00:01.819"
+							level="Warn"
+							category="Win32">
+							<message>
+								The automating process does not have the required security permissions to access the process 'Monitor'. UI element identification capabilities for controls in that process are limited.<br/>Process: 'Monitor' (pid 1648)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.1/technology-instrumentation/general-troubleshooting#GeneralTroubleshooting-Win32BasedApplications<br/>(This message is only shown once per report.)
+							</message>
+							<metainfo
+								limitationName="ProcessPermissions"
+								showInProgressDialog="False"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\OpenBrowser.cs"
+								codeline="99"
+								loglvl="Warn">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:02.058"
+							timeRelativeToTestModuleStartTime="00:01.387"
+							timeWallClock="13:42:37"
+							time="00:02.058"
+							level="Warn"
+							category="WinForms">
+							<message>
+								Failed to load the assemblies containing the definition of this control. UI element identification capabilities for this control are limited. Failed assemblies:<br/>C:\Program Files (x86)\SCM\SCM.exe<br/>Process: 'SCM' (pid 12692)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.1/technology-instrumentation/general-troubleshooting#GeneralTroubleshooting-.NETWinForms<br/>(This message is only shown once per report.)
+							</message>
+							<metainfo
+								limitationName="WinFormsResolving"
+								showInProgressDialog="False"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\OpenBrowser.cs"
+								codeline="99"
+								loglvl="Warn">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:02.089"
+							timeRelativeToTestModuleStartTime="00:01.419"
+							timeWallClock="13:42:37"
+							time="00:02.089"
+							level="Warn"
+							category="WinForms">
+							<message>
+								The control was recognized as a WinForms .NET 1.1 control. If this application targets the .NET Framework v1.1, then please ignore this message. Otherwise, the object recognition is not correct, most probably due to an installation issue. Please, uninstall and reinstall Ranorex and try again.<br/>Process: 'SCM' (pid 12692)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.1/technology-instrumentation/general-troubleshooting#GeneralTroubleshooting-.NETWinForms<br/>(This message is only shown once per report.)
+							</message>
+							<metainfo
+								limitationName="WinFormsNet11"
+								showInProgressDialog="False"
+								loglvl="Warn">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:02.427"
+							timeRelativeToTestModuleStartTime="00:01.757"
+							timeWallClock="13:42:38"
+							time="00:02.427"
+							level="Info"
+							category="User"
+							errimg="images_WordPres_6e72e7d2\WordPres_4e1cc5e1_rxlog.jpg"
+							errthumb="images_WordPres_6e72e7d2\WordPres_4e1cc5e1_rxlog_thumb.jpg">
+							<message>
+								
+							</message>
+							<metainfo
+								itemindex="1"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\OpenBrowser.cs"
+								codeline="99"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:02.443"
+							timeRelativeToTestModuleStartTime="00:01.773"
+							timeWallClock="13:42:38"
+							time="00:02.443"
+							level="Info"
+							category="Invoke action">
+							<message>
+								Invoking Navigate(variable $varLoginURL) on item 'WordPress_Demo'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='webtest.ranorex.org']"
+								itempath="/dom[@domain='webtest.ranorex.org']"
+								fullname="WebWordPressLibraryRepository.WordPress_Demo.Self"
+								id="1155ad1c67f947e2b2163b27bda1db0b"
+								timeout="30000"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\OpenBrowser.cs"
+								codeline="101"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="9.43s"
+					durationms="9432"
+					type="test-module"
+					rid="26fa533fc34dbd8c"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="Login (WebWordPressLibrary)"
+					displayName="Login (WebWordPressLibrary)"
+					moduleid="efef8546-cad4-403d-96b5-fed425522e81"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<detail>
+						Log in to back-end
+					</detail>
+					<varbindings>
+						<varbinding
+							name="varPassword"
+							value="ranorex">
+						</varbinding>
+						<varbinding
+							name="varUsername"
+							value="ranorex webtest new">
+						</varbinding>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.998"
+						timeRelativeToTestModuleStartTime="00:00.000"
+						timeWallClock="13:42:41"
+						time="00:05.998"
+						level="Info"
+						category="Data">
+						<message>
+							Current variable values:<br/>$varPassword = 'ranorex', $varUsername = 'ranorex webtest new'
+						</message>
+						<metainfo
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.036"
+						timeRelativeToTestModuleStartTime="00:00.037"
+						timeWallClock="13:42:41"
+						time="00:06.036"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'WordPress_Demo.Loginform.UserLogin' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_login']"
+							itempath=".//input[@id='user_login']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Loginform.UserLogin"
+							id="73564b76288243c3b20bae17d266067d"
+							timeout="90000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="108"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:07.389"
+						timeRelativeToTestModuleStartTime="00:01.391"
+						timeWallClock="13:42:43"
+						time="00:07.389"
+						level="Info"
+						category="Set value">
+						<message>
+							Setting attribute Value to '$varUsername' on item 'WordPress_Demo.Loginform.UserLogin'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_login']"
+							itempath=".//input[@id='user_login']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Loginform.UserLogin"
+							id="73564b76288243c3b20bae17d266067d"
+							timeout="90000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="112"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:07.508"
+						timeRelativeToTestModuleStartTime="00:01.510"
+						timeWallClock="13:42:43"
+						time="00:07.508"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'WordPress_Demo.Loginform.UserPass' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_pass']"
+							itempath=".//input[@id='user_pass']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Loginform.UserPass"
+							id="9ba00e0e2cec4c4cbe2dee6ce280d0a5"
+							timeout="90000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="116"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.537"
+						timeRelativeToTestModuleStartTime="00:02.538"
+						timeWallClock="13:42:44"
+						time="00:08.537"
+						level="Info"
+						category="Set value">
+						<message>
+							Setting attribute Value to '$varPassword' on item 'WordPress_Demo.Loginform.UserPass'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//form[#'loginform']//input[@id='user_pass']"
+							itempath=".//input[@id='user_pass']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Loginform.UserPass"
+							id="9ba00e0e2cec4c4cbe2dee6ce280d0a5"
+							timeout="90000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="120"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.722"
+						timeRelativeToTestModuleStartTime="00:02.723"
+						timeWallClock="13:42:44"
+						time="00:08.722"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'WordPress_Demo.Loginform.WpSubmit' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//form[#'loginform']/?/?/input[@id='wp-submit']"
+							itempath="?/?/input[@id='wp-submit']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Loginform.WpSubmit"
+							id="4f9f56195b5247649765e16693137316"
+							timeout="90000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="124"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.909"
+						timeRelativeToTestModuleStartTime="00:03.911"
+						timeWallClock="13:42:45"
+						time="00:09.909"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'WordPress_Demo.Dashboard' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//li[#'menu-dashboard']"
+							itempath=".//li[#'menu-dashboard']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Dashboard"
+							id="20d7927156084b0b9f91e52976c473af"
+							timeout="60000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\Login.cs"
+							codeline="128"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Failed"
+					duration="2.08s"
+					durationms="2080"
+					type="test-module"
+					rid="24c48eebf96aa78"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="NavigateNewPost (WebWordPressLibrary)"
+					displayName="NavigateNewPost (WebWordPressLibrary)"
+					moduleid="b0235fd3-422d-452e-8d02-133e4dffd6e4"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Failed to move to location 'Center' within element '{ATag:All Posts}'.
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.431"
+						timeRelativeToTestModuleStartTime="00:00.000"
+						timeWallClock="13:42:51"
+						time="00:15.431"
+						level="Info"
+						category="Invoke action">
+						<message>
+							Invoking EnsureVisible() on item 'WordPress_Demo.Posts'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']"
+							itempath=".//li[#'menu-posts']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Posts"
+							id="b7d609117c2c4958baf7534def07cbb1"
+							timeout="60000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\NavigateNewPost.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.123"
+						timeRelativeToTestModuleStartTime="00:00.692"
+						timeWallClock="13:42:51"
+						time="00:16.123"
+						level="Info"
+						category="Mouse"
+						errimg="images_WordPres_6e72e7d2\WordPres_6e72e7d2_462b4470_trace.jpg"
+						errthumb="images_WordPres_6e72e7d2\WordPres_6e72e7d2_462b4470_trace_thumb.jpg">
+						<message>
+							Mouse None Move item 'WordPress_Demo.Posts' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']"
+							itempath=".//li[#'menu-posts']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.Posts"
+							id="b7d609117c2c4958baf7534def07cbb1"
+							timeout="60000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\NavigateNewPost.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.941"
+						timeRelativeToTestModuleStartTime="00:01.510"
+						timeWallClock="13:42:52"
+						time="00:16.941"
+						level="Info"
+						category="Mouse"
+						errimg="images_WordPres_6e72e7d2\WordPres_6e72e7d2_ac0b01c7_trace.jpg"
+						errthumb="images_WordPres_6e72e7d2\WordPres_6e72e7d2_ac0b01c7_trace_thumb.jpg">
+						<message>
+							Mouse None Move item 'WordPress_Demo.AllPosts' at Center.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='All Posts']"
+							itempath=".//li[#'menu-posts']//a[@innertext='All Posts']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.AllPosts"
+							id="44201c90e37b4ed1a21a8fd6e663c06d"
+							timeout="60000"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\NavigateNewPost.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.426"
+						timeRelativeToTestModuleStartTime="00:01.995"
+						timeWallClock="13:42:53"
+						time="00:17.426"
+						level="Error"
+						category="Module"
+						errimg="images_WordPres_6e72e7d2\WordPres_6e72e7d2_7f9866bd_trace.jpg"
+						errthumb="images_WordPres_6e72e7d2\WordPres_6e72e7d2_7f9866bd_trace_thumb.jpg">
+						<message>
+							Failed to move to location 'Center' within element '{ATag:All Posts}'.<br/>The pointer cannot be moved to point '{X=240,Y=-12781}' since it is outside of the visible desktop.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Mouse.MoveTo(Element element, Location location, Duration moveTime)
+   at Ranorex.Adapter.MoveTo(Location location, Duration moveTime, Boolean showOutOfBoundsWarning)
+   at Ranorex.Adapter.MoveTo()
+   at WebWordPressLibrary.NavigateNewPost.Ranorex.Core.Testing.ITestModule.Run() in C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\NavigateNewPost.cs:line 91
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\NavigateNewPost.cs"
+							codeline="91"
+							type="repoitem"
+							path="/dom[@domain='webtest.ranorex.org']//li[#'menu-posts']//a[@innertext='All Posts']"
+							itempath=".//li[#'menu-posts']//a[@innertext='All Posts']"
+							fullname="WebWordPressLibraryRepository.WordPress_Demo.AllPosts"
+							id="44201c90e37b4ed1a21a8fd6e663c06d"
+							timeout="60000"
+							loglvl="Error"
+							itemindex="2">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="6.46s"
+					durationms="6464"
+					type="teardown-container"
+					rid="6f508b8345a4d12"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="3"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="6.32s"
+						durationms="6317"
+						type="test-module"
+						rid="2ef5f7a7df5bb992"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="LogOut (WebWordPressLibrary)"
+						displayName="LogOut (WebWordPressLibrary)"
+						moduleid="f297eb3c-19cb-4db4-917c-e476ae456167"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<detail>
+							Log out of back end
+						</detail>
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:17.527"
+							timeRelativeToTestModuleStartTime="00:00.015"
+							timeWallClock="13:42:53"
+							time="00:17.527"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'WordPress_Demo.Dashboard' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='webtest.ranorex.org']//li[#'menu-dashboard']"
+								itempath=".//li[#'menu-dashboard']"
+								fullname="WebWordPressLibraryRepository.WordPress_Demo.Dashboard"
+								id="20d7927156084b0b9f91e52976c473af"
+								timeout="60000"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\LogOut.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:18.583"
+							timeRelativeToTestModuleStartTime="00:01.072"
+							timeWallClock="13:42:54"
+							time="00:18.583"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse None Move item 'WordPress_Demo.MyAccount1' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-my-account']/a[@innertext='Howdy, Ranorex Webtest new']"
+								itempath=".//li[#'wp-admin-bar-my-account']/a[@innertext='Howdy, Ranorex Webtest new']"
+								fullname="WebWordPressLibraryRepository.WordPress_Demo.MyAccount1"
+								id="941d4a5d4fc34bceb0b7f75c361aec56"
+								timeout="60000"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\LogOut.cs"
+								codeline="86"
+								itemindex="1"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:20.603"
+							timeRelativeToTestModuleStartTime="00:03.091"
+							timeWallClock="13:42:56"
+							time="00:20.603"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'WordPress_Demo.LogOut' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='webtest.ranorex.org']//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']"
+								itempath=".//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']"
+								fullname="WebWordPressLibraryRepository.WordPress_Demo.LogOut"
+								id="1b88e9a635884e2fa9709a0c951cd799"
+								timeout="60000"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\LogOut.cs"
+								codeline="90"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:21.791"
+							timeRelativeToTestModuleStartTime="00:04.279"
+							timeWallClock="13:42:57"
+							time="00:21.791"
+							level="Info"
+							category="Delay">
+							<message>
+								Waiting for 2s.
+							</message>
+							<metainfo
+								itemindex="3"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\LogOut.cs"
+								codeline="94"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+					<activity
+						result="Success"
+						duration="131ms"
+						durationms="131"
+						type="test-module"
+						rid="289dc2574289a818"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="CloseBrowser (WebWordPressLibrary)"
+						displayName="CloseBrowser (WebWordPressLibrary)"
+						moduleid="13e51bc5-44c7-4f36-89b7-c187dc391f75"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:23.828"
+							timeRelativeToTestModuleStartTime="00:00.000"
+							timeWallClock="13:42:59"
+							time="00:23.828"
+							level="Info"
+							category="Application">
+							<message>
+								Closing application containing item 'WordPress_Demo'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='webtest.ranorex.org']"
+								itempath="/dom[@domain='webtest.ranorex.org']"
+								fullname="WebWordPressLibraryRepository.WordPress_Demo.Self"
+								id="1155ad1c67f947e2b2163b27bda1db0b"
+								timeout="30000"
+								codefile="C:\Users\onuru\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\CloseBrowser.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+					<activity
+						result="Success"
+						duration="15ms"
+						durationms="15"
+						type="test-module"
+						rid="82b5affeed8a924"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="StopWatchingPopup (WebWordPressLibrary)"
+						displayName="StopWatchingPopup (WebWordPressLibrary)"
+						moduleid="3ddee1a2-e900-4273-bdaf-ede19376659e"
+						moduletype="UserCode"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<detail>
+							Stop watching for popup
+						</detail>
+						<varbindings>
+						</varbindings>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

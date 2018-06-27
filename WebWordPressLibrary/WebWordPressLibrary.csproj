@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0683C4E0-27C8-4DDD-9876-870A0A1018E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebWordPressLibrary</RootNamespace>
+    <AssemblyName>WebWordPressLibrary</AssemblyName>
+    <RanorexVersion>8.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <projectdefaultrepository>4a85ea7f-e62c-4c64-a503-d9a41150da22</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeletePost.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>fac79b3e-62e5-4c49-8aec-8b0ca5f75d91</id>
+      <recordtableid>d3c9939f-4a9c-4c66-b0ba-0a26ae62285f</recordtableid>
+    </None>
+    <None Include="GetPostURL.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>ed480b79-c6a4-4d8b-960c-671f34f8c5da</id>
+      <recordtableid>a144ff6a-5458-489a-b361-c147c99c84cb</recordtableid>
+    </None>
+    <None Include="Login.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>6a553a5a-6d3d-409c-9d4d-4d8df4277f2e</id>
+      <recordtableid>efef8546-cad4-403d-96b5-fed425522e81</recordtableid>
+    </None>
+    <None Include="LogOut.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>591e77a2-f848-47b3-9090-3c285b943b30</id>
+      <recordtableid>f297eb3c-19cb-4db4-917c-e476ae456167</recordtableid>
+    </None>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>82344b0f-7ede-45db-91b7-87553a53a8d5</id>
+      <recordtableid>13e51bc5-44c7-4f36-89b7-c187dc391f75</recordtableid>
+    </None>
+    <None Include="NavigateLogin.rxrec">
+      <id>8baabd41-c50b-47b5-88fe-76d3231a49f0</id>
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <recordtableid>b4cae198-64a2-4954-82aa-3fe351ea32b7</recordtableid>
+    </None>
+    <None Include="NavigateNewPost.rxrec">
+      <id>16353e3b-6155-4245-9cbb-33048da4f04f</id>
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <recordtableid>b0235fd3-422d-452e-8d02-133e4dffd6e4</recordtableid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>95cf7114-f54f-420e-bb3d-c0ccee213b78</id>
+      <recordtableid>1a79ad03-9369-4d42-8d3a-34a236d1ed1d</recordtableid>
+    </None>
+    <None Include="PublishNewPost.rxrec">
+      <id>bddb5c01-6614-4c10-86c7-2a72ca04bb09</id>
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <recordtableid>5c0438e0-4aa8-4cce-9d0d-0adda576c6a7</recordtableid>
+    </None>
+    <None Include="ValidatePost.rxrec">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <id>47627d9e-c86d-4f17-8013-cea9ee1b6ceb</id>
+      <recordtableid>fc856961-94e1-4ead-8db8-e0eac61124f6</recordtableid>
+    </None>
+    <None Include="WebWordPressLibraryRepository.rximg">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <DependentUpon>WebWordPressLibraryRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>852dcd8e-68e3-4b9c-ae16-2ca9529a4c21</id>
+    </None>
+    <None Include="WebWordPressLibraryRepository.rxrep">
+      <id>4a85ea7f-e62c-4c64-a503-d9a41150da22</id>
+      <repoid>b68c5ae7-5d54-49e3-893c-ecd04dbce34b</repoid>
+      <reporootid>5251cef1-231f-4e1a-b0bd-41e54b4b13f8</reporootid>
+    </None>
+    <Content Include="WebWordPressLibrary.rxtmg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>e1bc6644-2731-42b5-a9be-aaa09300c9b6</id>
+    </Content>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4c573fae-0043-43de-91f0-89fb631c188f</id>
+    </Compile>
+    <Compile Include="DeletePost.cs">
+      <BoundTo>fac79b3e-62e5-4c49-8aec-8b0ca5f75d91</BoundTo>
+      <DependentUpon>DeletePost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a689ae1d-82aa-4e13-9ed9-1a75fa90fefe</id>
+    </Compile>
+    <Compile Include="DeletePost.UserCode.cs">
+      <BoundTo>fac79b3e-62e5-4c49-8aec-8b0ca5f75d91</BoundTo>
+      <DependentUpon>DeletePost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>95621d84-4258-4b0a-83f2-bf2c8d5bec76</id>
+    </Compile>
+    <Compile Include="GetPostURL.cs">
+      <BoundTo>ed480b79-c6a4-4d8b-960c-671f34f8c5da</BoundTo>
+      <DependentUpon>GetPostURL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d132af8-f7b9-4f9f-a952-eaa097b66f6d</id>
+    </Compile>
+    <Compile Include="GetPostURL.UserCode.cs">
+      <BoundTo>ed480b79-c6a4-4d8b-960c-671f34f8c5da</BoundTo>
+      <DependentUpon>GetPostURL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a8ebbee-935a-4eb1-b6f3-eb77ae705373</id>
+    </Compile>
+    <Compile Include="StartWatchingPopup.cs">
+      <id>4da78d20-ff92-46b8-84aa-15405f4e74d1</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <BoundTo>6a553a5a-6d3d-409c-9d4d-4d8df4277f2e</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>54b4df61-c447-4f85-9d56-ab0988156b62</id>
+    </Compile>
+    <Compile Include="Login.UserCode.cs">
+      <BoundTo>6a553a5a-6d3d-409c-9d4d-4d8df4277f2e</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0aba32f-41ab-42c7-aa1c-d87d4950faa5</id>
+    </Compile>
+    <Compile Include="LogOut.cs">
+      <BoundTo>591e77a2-f848-47b3-9090-3c285b943b30</BoundTo>
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3f0f0cf4-b09c-4175-9bed-c8b55881a4d4</id>
+    </Compile>
+    <Compile Include="LogOut.UserCode.cs">
+      <BoundTo>591e77a2-f848-47b3-9090-3c285b943b30</BoundTo>
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>415227e9-46d9-4421-898c-4c545e5c173a</id>
+    </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>82344b0f-7ede-45db-91b7-87553a53a8d5</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e44d101d-42cd-4bdc-b8d0-4e57e595f32e</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>82344b0f-7ede-45db-91b7-87553a53a8d5</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3637a7bd-9701-4546-90e9-ffb31759cf08</id>
+    </Compile>
+    <Compile Include="NavigateLogin.cs">
+      <BoundTo>8baabd41-c50b-47b5-88fe-76d3231a49f0</BoundTo>
+      <DependentUpon>NavigateLogin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c34edfd5-09a6-46fc-a98c-b5fea778f8b1</id>
+    </Compile>
+    <Compile Include="NavigateLogin.UserCode.cs">
+      <BoundTo>8baabd41-c50b-47b5-88fe-76d3231a49f0</BoundTo>
+      <DependentUpon>NavigateLogin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a16c484-a56f-4c8b-ad39-018a0dba9189</id>
+    </Compile>
+    <Compile Include="NavigateNewPost.cs">
+      <BoundTo>16353e3b-6155-4245-9cbb-33048da4f04f</BoundTo>
+      <DependentUpon>NavigateNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37b3a166-4bbc-407a-a1b4-99bf523e86ac</id>
+    </Compile>
+    <Compile Include="NavigateNewPost.UserCode.cs">
+      <BoundTo>16353e3b-6155-4245-9cbb-33048da4f04f</BoundTo>
+      <DependentUpon>NavigateNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6864280-9f2b-4bc5-bf4c-03f82875b7d1</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>95cf7114-f54f-420e-bb3d-c0ccee213b78</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d3c0676-67f9-42b3-9587-723afd8058a4</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>95cf7114-f54f-420e-bb3d-c0ccee213b78</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80f4e8bd-5173-4d0c-ae40-b3d62543756f</id>
+    </Compile>
+    <Compile Include="StopWatchingPopup.cs">
+      <id>42f2e456-074f-4483-8382-0221e65508e2</id>
+    </Compile>
+    <Compile Include="WatchAutoComplete.cs">
+      <id>8d860942-cee8-4643-b92a-3a5a5494a50f</id>
+    </Compile>
+    <Compile Include="PublishNewPost.cs">
+      <BoundTo>bddb5c01-6614-4c10-86c7-2a72ca04bb09</BoundTo>
+      <DependentUpon>PublishNewPost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6bc3bbad-a338-44ef-ba42-0c5392fe1159</id>
+    </Compile>
+    <Compile Include="PublishNewPost.UserCode.cs">
+      <BoundTo>bddb5c01-6614-4c10-86c7-2a72ca04bb09</BoundTo>
+      <DependentUpon>PublishNewPost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>abbe93d8-07de-4e15-8556-aef63e1f6c9a</id>
+    </Compile>
+    <Compile Include="ValidatePost.cs">
+      <BoundTo>47627d9e-c86d-4f17-8013-cea9ee1b6ceb</BoundTo>
+      <DependentUpon>ValidatePost.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e9c5523a-22e6-43b4-a0ad-c33b9e244664</id>
+    </Compile>
+    <Compile Include="ValidatePost.UserCode.cs">
+      <BoundTo>47627d9e-c86d-4f17-8013-cea9ee1b6ceb</BoundTo>
+      <DependentUpon>ValidatePost.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33a427b2-af85-4123-b6f0-90a04181890e</id>
+    </Compile>
+    <Compile Include="WebWordPressLibraryRepository.cs">
+      <BoundTo>4a85ea7f-e62c-4c64-a503-d9a41150da22</BoundTo>
+      <DependentUpon>WebWordPressLibraryRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>2d693ceb-38c9-461b-8272-63ef054fefef</id>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

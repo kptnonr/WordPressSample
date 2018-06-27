@@ -1,0 +1,10 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="WordPressSample.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="WordPressSample.rxtst" />
+  </Array>
+  <Properties name="projectSavedData" />
+</Properties>
